@@ -10,8 +10,12 @@ function Shop() {
             .then(res => res.json())
         .then(data => setProducts(data))
     }, []);
+
+    const [cart, setCart] = useState([]);
+
     const handleAddToCart = (product) => {
-    console.log(product)
+        let newCart = [...cart, product];
+        setCart(newCart);
 }
   return (
       <div className='shop-container'>
@@ -21,7 +25,7 @@ function Shop() {
              }
           </div>
           <div className="cart-container">
-              <Card/>
+              <Card cart={ cart } />
           </div>
       </div>
   )

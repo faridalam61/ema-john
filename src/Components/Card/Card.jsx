@@ -1,11 +1,11 @@
 import React from 'react'
 import './Card.css'
 
-function Card() {
+function Card({cart}) {
   return (
       <div className='cart'>
           <h2>Order Summary</h2>
-          <p>Selected Items:</p>
+          <p>Selected Items: { cart.length }</p>
           <p>Total Price:</p>
           <p>Shipping Charge:</p>
           <p>Tax:</p>
