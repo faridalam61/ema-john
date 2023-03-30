@@ -9,9 +9,10 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
-    margin:20px 0;
+    margin:100px 0 20px 0;
 }
 
 .cart-container{
-
+    position: relative;
+    height: 100%;
 }

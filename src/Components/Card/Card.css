@@ -1,0 +1,14 @@
+.cart{
+    background-color: #FFE0B3;
+    padding: 20px;
+    height: 100vh;
+    color: #333;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 230px;
+}
+
+.cart h2{
+    text-align: center;
+}
